@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- <h2 style="font-size:40px; margin-top: 0px;">Sudoku</h2> -->
+
+    <div class="flexbox">
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+    </div>
+    <div class="sudokuBox">
+        <table>
+
+            <tr class="row1">
+                <td class="col1"><input data-box="1" data-row="1" data-col="1" type="text" maxlength="1"/></td>
+                <td class="col2"><input data-box="1" data-row="1" data-col="2" type="text" maxlength="1"/></td>
+                <td class="col3"><input data-box="1" data-row="1" data-col="3" type="text" maxlength="1" /></td>
+                <td class="col4"><input data-box="2" data-row="1" data-col="4" type="text" maxlength="1" /></td>
+                <td class="col5"><input data-box="2" data-row="1" data-col="5" type="text" maxlength="1" /></td>
+                <td class="col6"><input data-box="2" data-row="1" data-col="6" type="text" maxlength="1" /></td>
+                <td class="col7"><input data-box="3" data-row="1" data-col="7" type="text" maxlength="1" /></td>
+                <td class="col8"><input data-box="3" data-row="1" data-col="8" type="text" maxlength="1" /></td>
+                <td class="col9"><input data-box="3" data-row="1" data-col="9" type="text" maxlength="1" /></td>
+            </tr>
+            
+            <tr class="row2">
+                <td class="col1"><input data-box="1" data-row="2" data-col="1" type="text" maxlength="1" /></td>
+                <td class="col2"><input data-box="1" data-row="2" data-col="2" type="text" maxlength="1" /></td>
+                <td class="col3"><input data-box="1" data-row="2" data-col="3" type="text" maxlength="1" /></td>
+                <td class="col4"><input data-box="2" data-row="2" data-col="4" type="text" maxlength="1" /></td>
+                <td class="col5"><input data-box="2" data-row="2" data-col="5" type="text" maxlength="1" /></td>
+                <td class="col6"><input data-box="2" data-row="2" data-col="6" type="text" maxlength="1" /></td>
+                <td class="col7"><input data-box="3" data-row="2" data-col="7" type="text" maxlength="1" /></td>
+                <td class="col8"><input data-box="3" data-row="2" data-col="8" type="text" maxlength="1" /></td>
+                <td class="col9"><input data-box="3" data-row="2" data-col="9" type="text" maxlength="1" /></td>
+            </tr>
+            
+            <tr class="row3">
+                <td class="col1"><input data-box="1" data-row="3" data-col="1" type="text" maxlength="1" /></td>
+                <td class="col2"><input data-box="1" data-row="3" data-col="2" type="text" maxlength="1" /></td>
+                <td class="col3"><input data-box="1" data-row="3" data-col="3" type="text" maxlength="1" /></td>
+                <td class="col4"><input data-box="2" data-row="3" data-col="4" type="text" maxlength="1" /></td>
+                <td class="col5"><input data-box="2" data-row="3" data-col="5" type="text" maxlength="1" /></td>
+                <td class="col6"><input data-box="2" data-row="3" data-col="6" type="text" maxlength="1" /></td>
+                <td class="col7"><input data-box="3" data-row="3" data-col="7" type="text" maxlength="1" /></td>
+                <td class="col8"><input data-box="3" data-row="3" data-col="8" type="text" maxlength="1" /></td>
+                <td class="col9"><input data-box="3" data-row="3" data-col="9" type="text" maxlength="1" /></td>
+            </tr
+            
+            ><tr class="row4">
+                <td class="col1"><input data-box="4" data-row="4" data-col="1" type="text" maxlength="1" /></td>
+                <td class="col2"><input data-box="4" data-row="4" data-col="2" type="text" maxlength="1" /></td>
+                <td class="col3"><input data-box="4" data-row="4" data-col="3" type="text" maxlength="1" /></td>
+                <td class="col4"><input data-box="5" data-row="4" data-col="4" type="text" maxlength="1" /></td>
+                <td class="col5"><input data-box="5" data-row="4" data-col="5" type="text" maxlength="1" /></td>
+                <td class="col6"><input data-box="5" data-row="4" data-col="6" type="text" maxlength="1" /></td>
+                <td class="col7"><input data-box="6" data-row="4" data-col="7" type="text" maxlength="1" /></td>
+                <td class="col8"><input data-box="6" data-row="4" data-col="8" type="text" maxlength="1" /></td>
+                <td class="col9"><input data-box="6" data-row="4" data-col="9" type="text" maxlength="1" /></td>
+            </tr>
+            
+            <tr class="row5">
+                <td class="col1"><input data-box="4" data-row="5" data-col="1" type="text" maxlength="1" /></td>
+                <td class="col2"><input data-box="4" data-row="5" data-col="2" type="text" maxlength="1" /></td>
+                <td class="col3"><input data-box="4" data-row="5" data-col="3" type="text" maxlength="1" /></td>
+                <td class="col4"><input data-box="5" data-row="5" data-col="4" type="text" maxlength="1" /></td>
+                <td class="col5"><input data-box="5" data-row="5" data-col="5" type="text" maxlength="1" /></td>
+                <td class="col6"><input data-box="5" data-row="5" data-col="6" type="text" maxlength="1" /></td>
+                <td class="col7"><input data-box="6" data-row="5" data-col="7" type="text" maxlength="1" /></td>
+                <td class="col8"><input data-box="6" data-row="5" data-col="8" type="text" maxlength="1" /></td>
+                <td class="col9"><input data-box="6" data-row="5" data-col="9" type="text" maxlength="1" /></td>
+            </tr>
+            
+            <tr class="row6">
+                <td class="col1"><input data-box="4" data-row="6" data-col="1" type="text" maxlength="1" /></td>
+                <td class="col2"><input data-box="4" data-row="6" data-col="2" type="text" maxlength="1" /></td>
+                <td class="col3"><input data-box="4" data-row="6" data-col="3" type="text" maxlength="1" /></td>
+                <td class="col4"><input data-box="5" data-row="6" data-col="4" type="text" maxlength="1" /></td>
+                <td class="col5"><input data-box="5" data-row="6" data-col="5" type="text" maxlength="1" /></td>
+                <td class="col6"><input data-box="5" data-row="6" data-col="6" type="text" maxlength="1" /></td>
+                <td class="col7"><input data-box="6" data-row="6" data-col="7" type="text" maxlength="1" /></td>
+                <td class="col8"><input data-box="6" data-row="6" data-col="8" type="text" maxlength="1" /></td>
+                <td class="col9"><input data-box="6" data-row="6" data-col="9" type="text" maxlength="1" /></td>
+            </tr>
+            
+            <tr class="row7">
+                <td class="col1"><input data-box="7" data-row="7" data-col="1" type="text" maxlength="1" /></td>
+                <td class="col2"><input data-box="7" data-row="7" data-col="2" type="text" maxlength="1" /></td>
+                <td class="col3"><input data-box="7" data-row="7" data-col="3" type="text" maxlength="1" /></td>
+                <td class="col4"><input data-box="8" data-row="7" data-col="4" type="text" maxlength="1" /></td>
+                <td class="col5"><input data-box="8" data-row="7" data-col="5" type="text" maxlength="1" /></td>
+                <td class="col6"><input data-box="8" data-row="7" data-col="6" type="text" maxlength="1" /></td>
+                <td class="col7"><input data-box="9" data-row="7" data-col="7" type="text" maxlength="1" /></td>
+                <td class="col8"><input data-box="9" data-row="7" data-col="8" type="text" maxlength="1" /></td>
+                <td class="col9"><input data-box="9" data-row="7" data-col="9" type="text" maxlength="1" /></td>
+            </tr> 
+            
+            <tr class="row8">
+                <td class="col1"><input data-box="7" data-row="8" data-col="1" type="text" maxlength="1" /></td>
+                <td class="col2"><input data-box="7" data-row="8" data-col="2" type="text" maxlength="1" /></td>
+                <td class="col3"><input data-box="7" data-row="8" data-col="3" type="text" maxlength="1" /></td>
+                <td class="col4"><input data-box="8" data-row="8" data-col="4" type="text" maxlength="1" /></td>
+                <td class="col5"><input data-box="8" data-row="8" data-col="5" type="text" maxlength="1" /></td>
+                <td class="col6"><input data-box="8" data-row="8" data-col="6" type="text" maxlength="1" /></td>
+                <td class="col7"><input data-box="9" data-row="8" data-col="7" type="text" maxlength="1" /></td>
+                <td class="col8"><input data-box="9" data-row="8" data-col="8" type="text" maxlength="1" /></td>
+                <td class="col9"><input data-box="9" data-row="8" data-col="9" type="text" maxlength="1" /></td>
+            </tr>
+            
+            <tr class="row9">
+                <td class="col1"><input data-box="7" data-row="9" data-col="1" type="text" maxlength="1" /></td>
+                <td class="col2"><input data-box="7" data-row="9" data-col="2" type="text" maxlength="1" /></td>
+                <td class="col3"><input data-box="7" data-row="9" data-col="3" type="text" maxlength="1" /></td>
+                <td class="col4"><input data-box="8" data-row="9" data-col="4" type="text" maxlength="1" /></td>
+                <td class="col5"><input data-box="8" data-row="9" data-col="5" type="text" maxlength="1" /></td>
+                <td class="col6"><input data-box="8" data-row="9" data-col="6" type="text" maxlength="1" /></td>
+                <td class="col7"><input data-box="9" data-row="9" data-col="7" type="text" maxlength="1" /></td>
+                <td class="col8"><input data-box="9" data-row="9" data-col="8" type="text" maxlength="1" /></td>
+                <td class="col9"><input data-box="9" data-row="9" data-col="9" type="text" maxlength="1" /></td>
+            </tr>
+            
+            
+        </table>
+    </div>
+    <button id="validatebtn">Validate</button>
+    <script src="./index.js"></script>
+</body>
+</html>

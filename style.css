@@ -1,0 +1,65 @@
+body{
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+td{
+    height: 60px;
+    width: 60px;
+    border: 1px solid #bec6d4;
+    text-align: center;
+    padding: 0px;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+table{
+    border-spacing: 0px;
+}
+.sudokuBox{
+    width: fit-content;
+    height: fit-content;
+    margin: 10px auto;
+    border: 2px solid #344861;
+}
+button{
+    padding: 5px 12px;
+    width: 77px;
+    height: 27px;
+}
+.col3,.col6{
+    border-right: 2px solid #344861;
+}
+.row4 td,.row7 td{
+    border-top: 2px solid #344861;
+}
+/* input:hover{
+    background-color:lightblue;
+} */
+
+input{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+input:disabled{
+    background-color: rgb(239, 239, 239);
+    color: #6b6969;
+}
+.incorrect{
+    border: 1px solid rgba(255, 0, 0,0.6) !important;
+    background-color: rgba(255, 0, 0,0.4) !important;
+}
+.select{
+    background-color: lightblue !important;
+}
